@@ -10,8 +10,6 @@ class InitialController extends Controller
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public function __construct() {}
-
     public function jsonResponse($statusCode, $message, $data = null): JsonResponse
     {
         return apiResponse($statusCode, $message, $data);
